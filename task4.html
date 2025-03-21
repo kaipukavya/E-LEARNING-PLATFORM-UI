@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+h1{
+font-size:50px;
+}
+h2{
+font-size:34px;
+font-family:serif;
+color:blueviolet;
+}
+h3{
+font-size:30px;
+font-family:arial;
+color:tomato;
+}
+p{
+font-size:25px;
+font-family:serif;
+color:black;
+}
+
+
+
+
+        body {
+            font-family:serif;
+            background-color:lightcyan;
+            color:black;
+          
+        }
+
+        header {
+            background-color:cadetblue;
+            padding:20px;
+            text-align:center;
+            font-size:30px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+                    }
+
+        .course-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 33%;
+            overflow: hidden;
+            margin-bottom:20px;
+            
+        }
+
+        .course-card img {
+            width: 100%;
+            height:60%;
+        }
+
+        .course-info {
+            padding: 15px;
+        }
+
+        .course-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .course-info p {
+            margin-bottom: 20px;
+        }
+
+        .course-info a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .course-video iframe {
+            width: 60%;
+            height:500px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .course-list {
+                flex-direction: column;
+            }
+
+            .course-card {
+                width: 50%;
+                margin-bottom: 20px;
+              align-items:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="home">
+        <h1>Welcome to Our E-Learning Platform</h1>
+<br>
+        <!-- Course List -->
+        <h2><b>AVAILABLE COURSES</b></h2>
+        <div id="courses" class="course-list">
+            
+            <!-- Course Cards for HTML, CSS, JavaScript, SQL, Python, and Java -->
+            <div class="course-card">
+                <img src="https://mdbootstrap.com/wp-content/uploads/2019/01/html.jpg" alt="HTML">
+                <div class="course-info">
+                    <h3>HTML for Beginners</h3>
+                    <p>Learn the basics of web development with HTML</p>
+                    <a href="#html-course">Start Course</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150349/CSS-Tutorial-copy.webp" alt="CSS">
+                <div class="course-info">
+                    <h3>CSS for Styling</h3>
+                    <p>Learn how to style your web pages with CSS</p>
+                    <a href="#css-course">Start Course</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TbgvkdZBvy7OTM4RM83SSHbUe9rMQCbEQw&s" alt="JavaScript">
+                <div class="course-info">
+                    <h3>JavaScript Fundamentals</h3>
+                    <p>Get started with JavaScript for interactive web pages.</p>
+                    <a href="#javascript-course">Start Course</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://www.classcentral.com/report/wp-content/uploads/2022/06/SQL-BCG-Banner-2.png" alt="SQL">
+                <div class="course-info">
+                    <h3>SQL for Databases</h3>
+                    <p>Learn how to manage databases using SQL queries.</p>
+                    <a href="#sql-course">Start Course</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://img-c.udemycdn.com/course/750x422/2314160_8d61_6.jpg" alt="Python">
+                <div class="course-info">
+                    <h3>Python Programming</h3>
+                    <p>Learn the basics of programming with Python.</p>
+                    <a href="#python-course">Start Course</a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://mindqsystems.com/wp-content/uploads/2019/08/Core-Java-Training.jpg" alt="Java">
+                <div class="course-info">
+                    <h3>Java Programming</h3>
+                    <p>Learn Java for backend development and software programming.</p>
+                    <a href="#java-course">Start Course</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Course 1: HTML -->
+    <div id="html-course">
+        <h1>Course: HTML for Beginners</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+          <iframe  src="https://www.youtube.com/embed/f_UsNJ1fHw4?si=Y_SPXy7SqNd653M7"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+         </div>
+
+         <br>
+
+    <!-- Course 2: CSS -->
+    <div id="css-course">
+        <h1>Course: CSS for Styling</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+           <iframe  src="https://www.youtube.com/embed/s_9dVEuMKRM?si=3oquwByczGnyie_q"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    </div>
+<br>
+    <!-- Course 3: JavaScript -->
+    <div id="javascript-course">
+        <h1>Course: JavaScript Fundamentals</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+          <iframe  src="https://www.youtube.com/embed/JVTZb4YvKjM?si=UseSqU3ctiECjB7a" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+<br>
+    <!-- Course 4: SQL -->
+    <div id="sql-course">
+        <h1>Course: SQL for Databases</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+            <iframe src="https://www.youtube.com/embed/q_JsgpiuY98?si=F4t0B50F6n9pgzbn"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+         </div>
+<br>
+    <!-- Course 5: Python -->
+    <div id="python-course">
+        <h1>Course: Python Programming</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+           <iframe  src="https://www.youtube.com/embed/h1WdbfoHeac?si=DMDdK50hBOPzx1z0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+<br>
+    <!-- Course 6: Java -->
+    <div id="java-course">
+        <h1>Course: Java Programming</h1>
+        <div class="course-video">
+            <h2>Course Video</h2>
+            <iframe src="https://www.youtube.com/embed/AzJEnN2pK_I?si=DxfFrZy81oMEROPi"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+<br>
+    <!-- Progress Page -->
+    <div id="progress">
+        <h1>Your Progress</h1>
+        <div class="progress-tracker">
+            <h2>HTML for Beginners</h2>
+            <p>Completed: 40%</p>
+            <progress value="40" max="100"></progress>
+
+            <h2>CSS for Styling</h2>
+            <p>Completed: 60%</p>
+            <progress value="60" max="100"></progress>
+
+            <h2>JavaScript Fundamentals</h2>
+            <p>Completed: 30%</p>
+            <progress value="30" max="100"></progress>
+
+            <h2>SQL for Databases</h2>
+            <p>Completed: 50%</p>
+            <progress value="50" max="100"></progress>
+
+            <h2>Python Programming</h2>
+            <p>Completed: 20%</p>
+            <progress value="20" max="100"></progress>
+
+            <h2>Java Programming</h2>
+            <p>Completed:10%</p>
+            <progress value="10" max="100"></progress>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 E-Learning Platform</p>
+    </footer>
+
+    <script>
+        function updateProgress(courseId) {
+            alert(courseId + ' progress updated!');
+        }
+    </script>
+
+</body>
+</html>
+
